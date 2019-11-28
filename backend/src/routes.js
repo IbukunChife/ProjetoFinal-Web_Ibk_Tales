@@ -20,7 +20,7 @@ routes.post('/product_atualizar/:id', ProductController.update);
 routes.post('/product/:id', ProductController.destroy);
 
 routes.get('/', (req,res)=>{
-    
+    return res.send("Bem-vindo no projeto NetClothes");
 })
 
 module.exports = routes;

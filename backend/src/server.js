@@ -14,7 +14,7 @@ mongoose.connect(mongo_uri, {
     if (err) {
         throw err;
     } else {
-        console.log(`Successfully connected to ${mongo_uri}`);
+        console.log(`Successfully connected to ATLAS MONGO DB ..... ENJOY!!!!! :)`);
     }
 });
 
@@ -80,7 +80,7 @@ app.use(passport.session());
 
 
 
-app.use(express.json);
+app.use(express.json());
 app.use(routes);
-app.listen(4000)
+app.listen(3000);
 
