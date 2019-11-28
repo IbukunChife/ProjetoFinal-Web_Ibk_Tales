@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const User = mongoose.model('User');
-const Product = mongoose.model('Product');
+const User = require('../models/User');
+const Product = require('../models/Product');
 
 const neo4j = require('neo4j-driver').v1;
 // config DataBase Neo4j
