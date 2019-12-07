@@ -23,7 +23,7 @@ const app = express();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
-var User = require('../models/User');
+var User = require('./models/User');
 
 
 // Configure the local strategy for use by Passport.
