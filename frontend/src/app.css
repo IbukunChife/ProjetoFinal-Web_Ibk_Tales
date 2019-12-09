@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Tahoma, Geneva, sans-serif;
+	background-color: whitesmoke;
+	background-repeat: repeat;
+}
