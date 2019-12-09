@@ -1,0 +1,11 @@
+Criar as pastas client e server
+Dentro da pasta client executar os seguintes codigos:
+ * sudo create-react-app ./
+ * sudo npm install --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string react-router-dom
+ * Apagar o arquivo "src" Dentro do client e criar uma nova pasta de nome "src"
+
+
+ Dentro da pasta server executar os seguintes codigos:
+  * sudo npm init -y
+  * sudo npm install --save cors nodemon express socket.io
+  * adicionar no arquivo server/package.json, Dentro da rubrica script  "start": "nodemon index.js",

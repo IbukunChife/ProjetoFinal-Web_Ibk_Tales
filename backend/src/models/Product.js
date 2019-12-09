@@ -28,10 +28,27 @@ const ProductSchema = new mongoose.Schema({
         type: String,
         require: true
     },
+    path:{
+        type: String,
+        required: false
+    },
     createdAt: {
         type: Date,
         default: Date.now
     }
-});
+},
+{
+    timestamps: true,
+    toObject: { virtuals:true},
+    toJSON: { virtuals:true}
+}
 
+);
+
+ProductSchema.virtual('url').get(function(){
+    const url = process.env.URL || 'http://localhost:3000'
+    
+    return `${url}/Product/${encodeURIComponent(this.path)}`;
+
+})
 module.exports =mongoose.model('Product', ProductSchema);

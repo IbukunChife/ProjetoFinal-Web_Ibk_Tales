@@ -18,6 +18,7 @@ routes.post('/finalizar_compra/:id', UserController.finalizarCompra);
 const ProductController = require('./controllers/ProductController');
 routes.get('/product', ProductController.index);
 routes.get('/product/:id', ProductController.show);
+// routes.post('/product/:id/images',upload.single('images'),ProductController.store);
 routes.post('/product',upload.single('images'),ProductController.store);
 routes.post('/product_atualizar/:id', ProductController.update);
 routes.post('/product/:id', ProductController.destroy);
